@@ -61,8 +61,21 @@
         
         public static function train($big_text_file, $good_text_file, $bad_text_file, $lib_path)
         {
-            if(is_file($big_text_file) === false || is_file($good_text_file) === false || is_file($bad_text_file) === false)
-            {
+            $errors = array();
+
+            if (is_file($big_text_file) === false) {
+                $errors[] = 'specified big_text_file does not exist';
+            }
+            if (is_file($good_text_file) === false) {
+                $errors[] = 'specified good_text_file does not exist';
+            }
+            if (is_file($bad_text_file) === false) {
+                $errors[] = 'specified bad_text_file does not exist';
+            }
+
+            if ($errors) {
+                echo 'File Errors(s):<br>';
+                echo implode('<br>', $errors).'<br><br>';
                 return false;
             }
             
