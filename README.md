@@ -3,7 +3,7 @@ Determines if text contains gibberish.
 
 Example 1: You want phrases like "Hello, world" and never "dsfknifdkoindwsif32839hdd"
 
-Example 2: You want usernames like "jamesjohn" and never "@H(*E*(@*(@EBUiujbn2mnn3"
+Example 2: You want usernames like "jamesjohn" and never "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
 
 ## How does it work?
 
