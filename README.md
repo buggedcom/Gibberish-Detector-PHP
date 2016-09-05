@@ -1,11 +1,11 @@
 # Gibberish Detector PHP
 Determines if text contains gibberish.
 
-# How does it work?
+## How does it work?
 
 Markov Chains. In this case, they describe which letters should or should not to be next to each other. By showing examples of good text and bad text, it teaches the software how to guess what letter combinations look like gibberish and which letter combinations look reasonably likely to be good text.
 
-# How do I use it?
+## How do I use it?
 
 1) Train the Markov Chains
 ```
@@ -22,7 +22,7 @@ $trainingSuccessful = Gibberish::train(
 $oddsItsGoodText = Gibberish::test($inputText, $matrix_file, true);
 ```
 
-# Who made it?
+## Who made it?
 
 Originally written in Python by Rob Renaud.
 
