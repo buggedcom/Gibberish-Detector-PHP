@@ -1,6 +1,10 @@
 # Gibberish Detector PHP
 Determines if text contains gibberish.
 
+Example 1: You want phrases like "Hello, world" and never "dsfknifdkoindwsif32839hdd"
+
+Example 2: You want usernames like "jamesjohn" and never "@H(*E*(@*(@EBUiujbn2mnn3"
+
 ## How does it work?
 
 Markov Chains. In this case, they describe which letters should or should not to be next to each other. By showing examples of good text and bad text, it teaches the software how to guess what letter combinations look like gibberish and which letter combinations look reasonably likely to be good text.
