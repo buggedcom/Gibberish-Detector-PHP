@@ -9,12 +9,17 @@ Markov Chains. In this case, they describe which letters should or should not to
 
 1) Train the Markov Chains
 ```
-	$trainingSuccessful = Gibberish::train(
-		$big_text_file,
-		$good_text_file,
-		$bad_text_file,
-		$matrix_file
-		);
+$trainingSuccessful = Gibberish::train(
+	$big_text_file,
+	$good_text_file,
+	$bad_text_file,
+	$matrix_file
+	);
+```
+
+2) Test new text against the Markov Chains
+```
+$oddsItsGoodText = Gibberish::test($inputText, $matrix_file, true);
 ```
 
 # Who made it?
